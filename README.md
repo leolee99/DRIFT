@@ -9,7 +9,7 @@
 The official implementation of paper "[DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents](https://www.arxiv.org/pdf/2506.12104)".
 
 ## How to Start
-We provide the evaluation of DRIFT on GPT-4o-mini and GPT-4o, **full code will be released later**, you can reproduce the results following:
+We provide the evaluation of DRIFT on GPT-4o-mini and GPT-4o, **full code (including other models) will be released later**, you can reproduce the results following:
 
 ### Construct Your Environment
 ```bash
