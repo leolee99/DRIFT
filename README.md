@@ -9,11 +9,11 @@
 The official implementation of paper "[DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents](https://www.arxiv.org/pdf/2506.12104)".
 
 ## How to Start
-We provide the evaluation of DRIFT on GPT-4o-mini, **full code will be released later**, you can reproduce the results of GPT-4o-mini following:
+We provide the evaluation of DRIFT on GPT-4o-mini and GPT-4o, **full code will be released later**, you can reproduce the results following:
 
 ### Construct Your Environment
 ```bash
-pip install "agentdojo"
+pip install "agentdojo==0.1.26"
 pip install -r requirements.txt
 ```
 
@@ -24,13 +24,20 @@ export OPENAI_API_KEY=your_key
 
 ### run task with no attack
 ```bash
-python pipeline_no_attack.py
+python pipeline_main.py \
+--model gpt-4o-mini-2024-07-18 \
+--build_constraints --injection_isolation --dynamic_validation
 ```
 
 ### run task under attack
 ```bash
-python pipeline_attack.py
+python pipeline_main.py \
+--model gpt-4o-mini-2024-07-18 --do_attack \
+--attack_type important_instructions \
+--build_constraints --injection_isolation --dynamic_validation
 ```
+
+If you want to evaluate under adaptive attack, add configure of ```--adaptive_attack```.
 
 ## References
 
