@@ -6,7 +6,7 @@
 <a target="_blank"><img src="assets/framework.png" alt="framework" style="width: 80%; min-width: 200px; display: block; margin: auto;"></a>
 </p>
 
-The official implementation of paper "[DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents](https://www.arxiv.org/pdf/2506.12104)".
+The official implementation of NeurIPS 2025 paper "[DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents](https://www.arxiv.org/pdf/2506.12104)".
 
 ## How to Start
 We provide the evaluation of DRIFT on GPT-4o-mini and GPT-4o, **full code (including other models) will be released later**, you can reproduce the results following:
@@ -47,7 +47,7 @@ If you find this work useful in your research or applications, we appreciate tha
 @articles{DRIFT,
   title={DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents},
   author={Hao Li and Xiaogeng Liu and Hung-Chun Chiu and Dianqi Li and Ning Zhang and Chaowei Xiao},
-  journal = {arXiv preprint arXiv:2506.12104},
+  journal = {NeurIPS},
   year={2025}
 }
 ```
