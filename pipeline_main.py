@@ -8,7 +8,7 @@ from DRIFTToolsExecutionLoop import DRIFTToolsExecutionLoop
 
 
 def main(args, suite_type):
-    benchmark_version = "v1.2"
+    benchmark_version = args.benchmark_version
     suites = tuple(get_suites(benchmark_version).keys())
     suites = (suite_type,) # banking, slack, travel, workspace
 
